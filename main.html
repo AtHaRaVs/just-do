@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="main.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>PRE-XAM</title>
+</head>
+
+<body>
+    <!-- Image and text -->
+    <nav class="navbar navbar-dark">
+        <div class="container-fluid">
+            <span class="navbar-brand mb-0 h1">Student Name</span>
+        </div>
+    </nav>
+    <div class="select-screen">
+        <h1 class="display-5 text-center">What will you study today? </h1>
+        <div class="card-holder">
+            <div class="row justify-content-center">
+                <div class="col-md-3 ">
+                    <div class="card" style="width: 25rem; height: 10rem;">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">DSA</h5>
+                            <p class="card-text">30 questions. 120 mins</p>
+                            <button id="dsa-subject-button" class="btn">Click here to start</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card" style="width: 25rem;height: 10rem;">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">OOPS</h5>
+                            <p class="card-text">30 questions. 120 mins</p>
+                            <button id="oops-subject-button" class="btn">Click here to start</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="start-screen">
+        <button id="start-button">Start</button>
+    </div>
+    <div id="display-container">
+        <div class="header">
+            <div class="number-of-count">
+                <span class="number-of-question">1 of 3 questions</span>
+            </div>
+            <div class="timer-div">
+                <img src="https://uxwing.com/wp-content/themes/uxwing/download/time-and-date/stopwatch-icon.png"
+                    width="20px" />
+                <span class="time-left">10s</span>
+            </div>
+        </div>
+        <div id="container">
+            <!-- questions and options will be displayed here -->
+        </div>
+        <button id="next-button">Next</button>
+    </div>
+    <div class="score-container hide">
+        <div id="user-score">Demo Score</div>
+        <button id="restart">Restart</button>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
